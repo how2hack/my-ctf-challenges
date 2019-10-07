@@ -4,7 +4,7 @@ OSX Heap Exploitation in Small Heap
 
 ## Motivation
 
-`Machbook` challenge is motivated by 0CTF 2019 Quals Challenge `applepie`, which focus on OSX Heap Exploitation in Tiny Heap. I tried to solve that challenge but I wasn't able to solve it on time. So I took some time to review the heap structure and memory allocator mechanism in OSX after the contest with [Angelboy's](http://blog.angelboy.tw/) help, a very big thanks to him!
+`Machbook` challenge is motivated by 0CTF 2019 Quals Challenge `applepie`, which focus on OSX Heap Exploitation in Tiny Heap. I tried to solve that challenge but I wasn't able to solve it on time. So I took some time to review the heap structure and memory allocator mechanism in OSX after the contest with [@scwuaptx](https://twitter.com/scwuaptx) help, a very big thanks to him!
 
 If you are interested in OSX Heap Structure and Memory Allocator Mechanism, you can check this slide created by Angelboy: https://www.slideshare.net/AngelBoy1/macos-memory-allocator-libmalloc-exploitation
 

@@ -2,11 +2,27 @@
 
 OSX Heap Exploitation in Small Heap
 
-## Motivation
+Description:
 
-`Machbook` challenge is motivated by 0CTF 2019 Quals Challenge `applepie`, which focus on OSX Heap Exploitation in Tiny Heap. I tried to solve that challenge but I wasn't able to solve it on time. So I took some time to review the heap structure and memory allocator mechanism in OSX after the contest with [@scwuaptx](https://twitter.com/scwuaptx) help, a very big thanks to him!
+```
+Mach Apple Great Again!!!
+https://drive.google.com/open?id=1-8IauoBTbeuoCS_HN8ngxNtaXhxjsuLO
+nc machbook.balsnctf.com 19091
 
-If you are interested in OSX Heap Structure and Memory Allocator Mechanism, you can check this slide created by Angelboy: https://www.slideshare.net/AngelBoy1/macos-memory-allocator-libmalloc-exploitation
+download link: here
+
+Author: how2hack
+
+Hint: OSX library offset will not change if system is still up
+```
+
+Solve: 1/728
+
+## Inspiration
+
+`Machbook` challenge is inspired by 0CTF 2019 Quals Challenge `applepie`, which focus on OSX Heap Exploitation in Tiny Heap. I tried to solve that challenge but I wasn't able to solve it on time. So I took some time to review the heap structure and memory allocator mechanism in OSX after the contest with [@scwuaptx](https://twitter.com/scwuaptx) help, a very big thanks to him!
+
+If you are interested in OSX Heap Structure and Memory Allocator Mechanism, you can check this [slide](https://www.slideshare.net/AngelBoy1/macos-memory-allocator-libmalloc-exploitation) created by Angelboy.
 
 ## OSX Small Heap
 
@@ -82,7 +98,7 @@ To bypass this, we can write a small check to keep malloc until we get the small
 
 Now you have arbitrary write, you can overwrite `user2->pw_ptr` to `atoi@la_symbol_ptr` (similar to `GOT` in glibc). Then you can overwrite `atoi@_la_symbol_ptr` to `system` libsystem address. You can call `system` by calling `atoi`.
 
-You can find my exploit [here](script.py)
+You can find my exploit [here](script.py).
 
 ## Thanks for playing Balsn CTF 2019
 

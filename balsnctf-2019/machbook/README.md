@@ -16,7 +16,7 @@ Author: how2hack
 Hint: OSX library offset will not change if system is still up
 ```
 
-Solve: 1/728
+Solves: 1/728
 
 ## Inspiration
 
@@ -67,6 +67,8 @@ In this challenge, the program consists of one memory corruption that may lead t
             |       ...       |
             +-----------------+
 ```
+
+### Vulnerability
 
 The bug is very trivial, it will directly replace `\` to `\\` in `name`, so the data will overflow to `post`. You can use this bug to trigger arbitrary read and arbitrary free.
 

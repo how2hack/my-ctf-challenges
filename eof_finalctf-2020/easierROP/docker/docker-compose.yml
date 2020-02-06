@@ -1,0 +1,32 @@
+version: "3"
+services:
+    easierrop:
+        build: ./
+        environment:
+            - OLDPWD=/home
+            - XDG_RUNTIME_DIR=/run/user/1000
+            - LESSOPEN=| /usr/bin/lesspipe %s
+            - LANG=en_US
+            - SHLVL=1
+            - SHELL=/bin/bash
+            - FLAG=/
+            - ROOT=/
+            - TCP_PORT=19091
+            - PORT=19091
+            - X_PORT=19091
+            - SERVICE=easierROP
+            - XPC_FLAGS=0x0
+            - TMPDIR=/tmp
+            - RBENV_SHELL=bash
+        ports:
+            - "19091:19091"
+        expose:
+            - "19091"
+        networks:
+            - easierrop-net
+
+networks:
+    easierrop-net:
+        driver: bridge
+        driver_opts:
+            com.docker.network.driver.mtu: 2000

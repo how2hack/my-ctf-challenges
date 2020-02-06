@@ -1,0 +1,15 @@
+service unlucky
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/unlucky/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = unlucky
+        port = 19091
+        flags = REUSE
+        per_source = 5
+        rlimit_cpu = 3
+        nice = 18
+}

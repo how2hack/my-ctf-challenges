@@ -1,0 +1,22 @@
+lucky:
+    build: ./
+    environment:
+        - OLDPWD=/home
+        - XDG_RUNTIME_DIR=/run/user/1000
+        - LESSOPEN=| /usr/bin/lesspipe %s
+        - LANG=en_US
+        - SHLVL=1
+        - SHELL=/bin/bash
+        - FLAG=/
+        - ROOT=/
+        - TCP_PORT=19091
+        - PORT=19091
+        - X_PORT=19091
+        - SERVICE=lucky
+        - XPC_FLAGS=0x0
+        - TMPDIR=/tmp
+        - RBENV_SHELL=bash
+    ports:
+        - "39091:19091"
+    expose:
+        - "19091"

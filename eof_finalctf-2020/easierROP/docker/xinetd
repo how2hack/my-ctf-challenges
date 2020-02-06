@@ -1,0 +1,15 @@
+service easierrop
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/easierROP/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = easierROP
+        port = 19091
+        flags = REUSE
+        per_source = 5
+        rlimit_cpu = 3
+        nice = 18
+}

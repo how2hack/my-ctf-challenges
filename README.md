@@ -1,6 +1,6 @@
 # My CTF Challenges
 
-CTF challenges created by [@_how2hack_](https://twitter.com/_how2hack_)
+CTF challenges created by [@\_how2hack\_](https://twitter.com/_how2hack_)
 
 * Pwn
     * [Machbook](balsnctf-2019/machbook)

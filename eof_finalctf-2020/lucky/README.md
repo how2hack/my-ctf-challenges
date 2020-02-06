@@ -10,7 +10,7 @@ Can't solve Unlucky? Try your luck here!
 nc eof.ais3.org 39091
 ```
 
-Solves: 7/15
+Solves: 8/15
 
 ## Idea
 

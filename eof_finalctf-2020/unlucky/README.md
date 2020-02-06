@@ -27,3 +27,6 @@ The idea is from [@LiveOverflow](https://twitter.com/LiveOverflow)'s Youtube [vi
     * A very basic format string vulnerability
     * Input `%p.%p.%p.%p.%p.%p.%p.%p.%p.%p.%p.%p.%p.%p.` then you will find the flag
 
+## Uninteded Solution
+* You are allowed to input a 20 bytes bash command, but you need to give input for `/readflag` so technically you can't really execute `/readflag` to get flag
+	* One team uses `bash -c '%1$p'|&/r*` to leak the flag, really amazing!

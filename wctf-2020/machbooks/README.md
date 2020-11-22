@@ -8,7 +8,7 @@ Description:
 What kind of books do you like? I like Machbooks!
 ```
 
-Solves: 1/8
+Solves: 1/7
 
 ## Writeup slide
 

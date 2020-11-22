@@ -1,0 +1,14 @@
+(version 1)
+(deny default)
+
+(allow process-exec* 
+    (path "/Users/ctf/machbooks/machbooks"))
+
+(allow file-write* file-read-data file-read-metadata
+    (subpath "/Users/ctf/machbooks/tmp"))
+
+(allow file-read-data 
+    (path "/Users/ctf/machbooks/flag"))
+
+(allow file-read-metadata
+    (subpath "/usr/lib"))
